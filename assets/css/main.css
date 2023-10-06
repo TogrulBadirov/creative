@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.button {
+  background-color: red;
+  border: 1px solid red;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+#header #nav {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+#header #nav h2 {
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-size: 20px;
+}
+#header #nav ul {
+  display: flex;
+}
+#header #nav ul li {
+  margin: 20px;
+}
+#header #nav ul li a {
+  color: white;
+  -webkit-text-decoration: no;
+          text-decoration: no;
+}
+#header .heading {
+  width: 30%;
+  height: 40vh;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+}
+#header .heading h1 {
+  font-size: 56px;
+}
+#header .heading hr {
+  width: 50px;
+  height: 2px;
+  background-color: #f4623a;
+  border: none;
+  display: inline-block;
+  margin: 24px;
+}
+#header .heading p {
+  font-size: 18px;
+}
+#header .heading a {
+  padding: 20px 16px;
+  border-radius: 30px;
+  background-color: #f4623a;
+  display: inline-block;
+  margin: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+#getStarted {
+  width: 100%;
+  height: 50vh;
+  background-color: #f4623a;
+  position: relative;
+}
+#getStarted .container {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 120px 0;
+}
+#getStarted .container h2 {
+  font-size: 32px;
+}
+#getStarted .container hr {
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  border: none;
+  display: inline-block;
+  margin: 24px;
+}
+#getStarted .container a {
+  padding: 20px 36px;
+  border-radius: 30px;
+  background-color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 24px;
+  color: black;
+  font-size: 14PX;
+}
+
+#service {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  padding: 50px 0;
+}
+#service .heading h2 {
+  font-size: 24px;
+}
+#service .heading hr {
+  width: 50px;
+  height: 2px;
+  background-color: #f4623a;
+  border: none;
+  display: inline-block;
+  margin: 24px;
+}
+#service .cards {
+  display: flex;
+  justify-content: center;
+}
+#service .cards .card {
+  width: 220px;
+  height: 220px;
+  padding: 0 24px;
+}
+#service .cards .card h3 {
+  font-size: 26px;
+}
+#service .cards .card p {
+  font-size: 18px;
+  color: #6c757d;
+}
+#service .cards .card i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #6c757d;
+}
+
+#projects {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  text-align: center;
+  border: 1px solid red;
+}
+#projects .container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#projects .container .img {
+  width: 33vw;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#projects .container .img p, #projects .container .img h3 {
+  color: transparent;
+}
+#projects .container .img:hover p, #projects .container h3 {
+  color: white;
+}
+#projects .container .img:hover {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+}
+#projects .container .project1 {
+  background: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project2 {
+  background: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project3 {
+  background: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project4 {
+  background: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project5 {
+  background: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project6 {
+  background: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project1:hover {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project2:hover {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project3:hover {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project4:hover {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project5:hover {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#projects .container .project6:hover {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=main.css.map */
